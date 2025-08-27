@@ -111,14 +111,20 @@ function init() {
         startAutoPlay();
         createHearts();
         setupSwipe();
-
-        // Cho phép âm thanh tự động phát khi người dùng tương tác
-        document.body.addEventListener('click', function () {
-            if (bgMusic.paused) {
-                bgMusic.play().catch(e => console.log("Autoplay prevented: ", e));
-                musicControl.innerHTML = '<i class="fas fa-volume-up"></i>';
-            }
-        }, { once: true });
+        //  bgMusic.play().then(() => {
+        //     musicControl.innerHTML = '<i class="fas fa-volume-up"></i>';
+        // }).catch(e => {
+        //     // Nếu trình duyệt chặn autoplay, vẫn giữ icon mặc định
+        //     console.log("Autoplay prevented: ", e);
+        // });
+    
+        // // Cho phép âm thanh tự động phát khi người dùng tương tác
+        // document.body.addEventListener('click', function () {
+        //     if (bgMusic.paused) {
+        //         bgMusic.play().catch(e => console.log("Autoplay prevented: ", e));
+        //         musicControl.innerHTML = '<i class="fas fa-volume-up"></i>';
+        //     }
+        // }, { once: true });
     });
 }
 
@@ -218,7 +224,7 @@ function animateText(text) {
         if (autoPlay) {
             nextMemory();
         }
-    }, 5000);
+    }, 7000);
 }
 
 
@@ -234,7 +240,7 @@ function startAutoPlay() {
     autoPlayInterval = setInterval(() => {
         // Chỉ chuyển ảnh nếu không đang hiệu ứng chữ
             nextMemory();
-    }, 5000); // Tăng thời gian lên để đủ xem hiệu ứng chữ
+    }, 7000); // Tăng thời gian lên để đủ xem hiệu ứng chữ
     toggleBtn.innerHTML = '<i class="fas fa-pause"></i><span>Dừng</span>';
 }
 
@@ -328,6 +334,7 @@ musicControl.addEventListener('click', () => {
         bgMusic.pause();
         musicControl.innerHTML = '<i class="fas fa-music"></i>';
     }
+    
 });
 
 // Khởi tạo
@@ -336,11 +343,4 @@ init();
 // Ngăn zoom bằng hai ngón tay
 document.addEventListener('gesturestart', function (e) {
     e.preventDefault();
-});
-
-music.addEventListener('canplaythrough', () => {
-    preloader.style.opacity = 0;
-    setTimeout(() => preloader.style.display = 'none', 500);
-    music.play();
-    startSlideshow();
 });
