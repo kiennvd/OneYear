@@ -107,10 +107,9 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 380px;
-    max-width: 420px;
+    min-height: 340px;
+    max-width: 400px;
     height: 450px;
-    /* min-width: 400px; */
     margin: 0 auto;
 }
 
