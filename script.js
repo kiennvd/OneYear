@@ -21,52 +21,52 @@ const memories = [
         story: "Nụ cười ấy làm mọi thứ trở nên thật đặc biệt."
     },
     {
-        image: "/img/4.jpg",
+        image: "img/4.jpg",
         title: "Nơi đây chúng ta gặp nhau lần đầu",
         story: "Lần đầu nhìn thấy nhau, trao nhau ánh mắt dịu dàng, nụ cười ấm áp. Bữa ăn nhỏ nhưng đầy tiếng cười và những câu chuyện chưa kể."
     },
     {
-        image: "/img/5.jpg",
+        image: "img/5.jpg",
         title: "Cảm ơn vì đã ở lại bên cạnh",
         story: ""
     },
     {
-        image: "/img/6.jpg",
+        image: "img/6.jpg",
         title: "Cảm ơn vì đã ở lại bên cạnh",
         story: ""
     },
     {
-        image: "/img/7.jpg",
+        image: "img/7.jpg",
         title: "Cảm ơn vì đã ở lại bên cạnh",
         story: ""
     },
     {
-        image: "/img/8.jpg",
+        image: "img/8.jpg",
         title: "Người khiến anh luôn muốn bảo vệ",
         story: "Một cô bé dễ thương"
     },
     {
-        image: "/img/11.jpg",
+        image: "img/11.jpg",
         title: "Người khiến anh luôn muốn bảo vệ",
         story: "Lương thiện và tốt bụng"
     },
      {
-        image: "/img/12.jpg",
+        image: "img/12.jpg",
         title: "Người khiến anh luôn muốn bảo vệ",
         story: "Xinh đẹp và đáng yêu"
     },
     {
-        image: "/img/10.jpg",
+        image: "img/10.jpg",
         title: "Người khiến anh luôn muốn bảo vệ",
         story: "Có chút hậu đậu và ngốc nghếch"
     },
     {
-        image: "/img/13.jpg",
+        image: "img/13.jpg",
         title: "Kỷ niệm này sẽ mãi trong tim",
         story: "Dù khó khăn mình vẫn cùng nhau vượt qua. Lần em lên Hà Nội mình chỉ kịp hẹn nhau trong chốc lát nhưng những ký ức đó sẽ mãi không phai."
     },
     {
-        image: "/img/9.jpg",
+        image: "img/9.jpg",
         title: "Một năm kỷ niệm, hành trình vẫn tiếp tục...",
         story: "Một năm có rất nhiều điều không thể nào diễn tả hết bằng lời mà chỉ có thể khắc ghi ở trong tim. Cảm ơn em vì đã đến bên anh."
     }
