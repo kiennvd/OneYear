@@ -99,6 +99,21 @@ h1 {
     margin: 10px 0;
 }
 
+/* Container trung tâm */
+.container {
+    width: 100%;
+    max-width: 1000px; /* mở rộng tối đa */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    box-sizing: border-box;
+}
+
+/* Khung chính */
 .main-frame {
     background: rgba(255, 255, 255, 0.95);
     border-radius: 24px;
@@ -107,13 +122,14 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    height: auto;
     min-height: 340px;
-    max-width: 420px; /* tăng tối đa khung */
-    width: 90%;        /* responsive */
-    /* bỏ height cố định */
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
+/* Khung ảnh */
 .main-image-container {
     width: 100%;
     aspect-ratio: 16/9; /* giữ tỉ lệ ảnh */
@@ -127,12 +143,25 @@ h1 {
     overflow: hidden;
 }
 
+/* Ảnh bên trong khung */
 .main-image {
     width: 100%;
     height: 100%;
     border-radius: 14px;
-    object-fit: cover;
+    object-fit: cover; /* lấp đầy khung mà không méo */
 }
+
+/* Story text */
+.story-text {
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    min-height: 80px;
+    line-height: 1.8;
+    overflow-wrap: break-word;
+}
+
 
 
 .image-error {
