@@ -108,15 +108,15 @@ h1 {
     flex-direction: column;
     align-items: center;
     min-height: 340px;
-    max-width: 400px;
-    height: 450px;
+    max-width: 420px; /* tăng tối đa khung */
+    width: 90%;        /* responsive */
+    /* bỏ height cố định */
     margin: 0 auto;
 }
 
 .main-image-container {
     width: 100%;
-    min-height: 180px;
-    max-height: 220px;
+    aspect-ratio: 16/9; /* giữ tỉ lệ ảnh */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,13 +128,12 @@ h1 {
 }
 
 .main-image {
-    max-width: 96%;
-    max-height: 200px;
+    width: 100%;
+    height: 100%;
     border-radius: 14px;
-    box-shadow: 0 2px 8px #fff8;
     object-fit: cover;
-    background: #fff;
 }
+
 
 .image-error {
     display: flex;
