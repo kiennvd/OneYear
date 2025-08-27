@@ -464,3 +464,105 @@ h1 {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;
 }
+/* Body full screen */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffe4ec 0%, #e0d7ff 100%);
+    overflow-x: hidden;
+}
+
+/* Container trung tâm */
+.container {
+    width: 95%;
+    max-width: 1200px; /* mở rộng tối đa trên màn hình lớn */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Khung chính */
+.main-frame {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(209, 107, 165, 0.6);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Khung ảnh */
+.main-image-container {
+    width: 100%;
+    max-height: 70vh; /* tối đa 70% chiều cao màn hình */
+    aspect-ratio: 16/9; /* giữ tỉ lệ ảnh */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background: linear-gradient(120deg, #ffe4ec 60%, #e0d7ff 100%);
+}
+
+/* Ảnh bên trong khung */
+.main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Story text responsive */
+.story-text {
+    width: 100%;
+    font-size: clamp(0.9rem, 1.2vw, 1.2rem); /* tự co giãn theo màn hình */
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+/* Gallery ảnh */
+.gallery {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+    width: 100%;
+}
+
+.gallery-item {
+    flex: 0 0 auto;
+    width: clamp(60px, 8vw, 100px);
+    height: clamp(60px, 8vw, 100px);
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+/* Media query cho màn hình nhỏ */
+@media (max-width: 600px) {
+    .main-frame {
+        padding: 15px;
+    }
+    .story-text {
+        font-size: 1rem;
+    }
+    .gallery-item {
+        width: 60px;
+        height: 60px;
+    }
+}
