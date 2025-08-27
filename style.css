@@ -418,3 +418,10 @@
             text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
             margin-bottom: 20px;
         }
+        .main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* không cắt ảnh */
+    background: #fff; /* nếu muốn nền trắng chỗ thừa */
+    border-radius: 14px;
+}
