@@ -109,7 +109,7 @@ h1 {
     align-items: center;
     min-height: 380px;
     max-width: 420px;
-    /* height: 450px; */
+    height: 450px;
     /* min-width: 400px; */
     margin: 0 auto;
 }
